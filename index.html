@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Engine — Next-Gen AI Productivity Platform</title>
+  <meta name="description" content="Aura Engine combines intelligent automation, real-time analytics, and sleek UI to supercharge your workflow.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">
+          <i data-lucide="zap"></i>
+        </div>
+        <span class="brand-text">Aura<span class="brand-highlight">Engine</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#demo" class="nav-link">Live Demo</a>
+        <a href="#metrics" class="nav-link">Performance</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+          <i data-lucide="moon" id="themeIcon"></i>
+        </button>
+        <a href="#demo" class="btn btn-primary">Get Started</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">
+          <i data-lucide="sparkles"></i>
+          <span>Engineered for High-Performance Teams</span>
+        </div>
+        <h1 class="hero-title">Intelligent Automation for <span class="gradient-text">Modern Workflows</span></h1>
+        <p class="hero-subtitle">
+          Supercharge your business operations with real-time insights, automated workflows, and an ultra-responsive interface designed for speed and clarity.
+        </p>
+        <div class="hero-cta">
+          <a href="#demo" class="btn btn-primary btn-lg">
+            <span>Explore Live Demo</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#features" class="btn btn-secondary btn-lg">
+            <i data-lucide="play-circle"></i>
+            <span>Watch Overview</span>
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-avatars">
+            <div class="avatar">⚡</div>
+            <div class="avatar">🚀</div>
+            <div class="avatar">✨</div>
+            <div class="avatar">💎</div>
+          </div>
+          <span class="trust-text">Trusted by <strong>10,000+</strong> innovators worldwide</span>
+        </div>
+      </div>
+
+      <div class="hero-preview">
+        <div class="preview-card glass-panel">
+          <div class="window-header">
+            <div class="dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="window-title">Aura Command Center v2.4</div>
+            <div class="window-badge"><i data-lucide="shield-check"></i> Live</div>
+          </div>
+          <div class="window-body">
+            <div class="stat-cards-grid">
+              <div class="mini-card">
+                <span class="mini-label">System Velocity</span>
+                <div class="mini-val">99.8%</div>
+                <div class="mini-trend positive"><i data-lucide="trending-up"></i> +14%</div>
+              </div>
+              <div class="mini-card">
+                <span class="mini-label">Tasks Automated</span>
+                <div class="mini-val">14,290</div>
+                <div class="mini-trend positive"><i data-lucide="trending-up"></i> +32%</div>
+              </div>
+            </div>
+            <div class="interactive-preview-box">
+              <div class="box-header">
+                <span>Active Autopilot Workflow</span>
+                <span class="status-indicator">Running</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" id="heroProgressBar"></div>
+              </div>
+              <div class="log-stream" id="heroLogStream">
+                <div class="log-item"><span class="log-time">[16:58:00]</span> Initializing system nodes...</div>
+                <div class="log-item"><span class="log-time">[16:58:02]</span> Syncing connected databases...</div>
+                <div class="log-item highlight"><span class="log-time">[16:58:05]</span> Autopilot active: 100% operational</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Built for Speed, Designed for Precision</h2>
+        <p class="section-subtitle">Everything you need to manage, automate, and scale your operations without friction.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card glass-panel">
+          <div class="feature-icon icon-blue">
+            <i data-lucide="cpu"></i>
+          </div>
+          <h3 class="feature-title">AI Engine Autopilot</h3>
+          <p class="feature-desc">Delegate repetitive tasks to autonomous workers that execute with zero error rate and 24/7 uptime.</p>
+        </div>
+
+        <div class="feature-card glass-panel">
+          <div class="feature-icon icon-purple">
+            <i data-lucide="bar-chart-3"></i>
+          </div>
+          <h3 class="feature-title">Real-Time Telemetry</h3>
+          <p class="feature-desc">Instant metrics, custom dashboards, and predictive telemetry delivered in real-time without latency.</p>
+        </div>
+
+        <div class="feature-card glass-panel">
+          <div class="feature-icon icon-emerald">
+            <i data-lucide="lock"></i>
+          </div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-desc">End-to-end encryption, strict workspace isolation, and automated audit logs keep your data safe.</p>
+        </div>
+
+        <div class="feature-card glass-panel">
+          <div class="feature-icon icon-amber">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3 class="feature-title">Seamless Integrations</h3>
+          <p class="feature-desc">Connect with GitHub, Slack, Webhooks, and cloud infrastructure with 1-click authorization.</p>
+        </div>
+
+        <div class="feature-card glass-panel">
+          <div class="feature-icon icon-rose">
+            <i data-lucide="zap"></i>
+          </div>
+          <h3 class="feature-title">Lightning Speed</h3>
+          <p class="feature-desc">Engineered on a lightweight architecture to deliver sub-50ms interaction response times.</p>
+        </div>
+
+        <div class="feature-card glass-panel">
+          <div class="feature-icon icon-cyan">
+            <i data-lucide="sliders"></i>
+          </div>
+          <h3 class="feature-title">Custom Rules Engine</h3>
+          <p class="feature-desc">Define custom trigger conditions, conditional execution flows, and instant notification alerts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Demo Section -->
+  <section class="section demo-section" id="demo">
+    <div class="container">
+      <div class="glass-panel demo-container">
+        <div class="demo-header text-center">
+          <span class="badge badge-accent"><i data-lucide="terminal"></i> Interactive Playground</span>
+          <h2 class="section-title">Test the Aura Engine Simulator</h2>
+          <p class="section-subtitle">Select a scenario below to see how Aura Engine optimizes workloads dynamically.</p>
+        </div>
+
+        <div class="demo-tabs">
+          <button class="demo-tab active" data-scenario="analytics">
+            <i data-lucide="activity"></i> Analytics Pipeline
+          </button>
+          <button class="demo-tab" data-scenario="security">
+            <i data-lucide="shield"></i> Security Audit
+          </button>
+          <button class="demo-tab" data-scenario="automation">
+            <i data-lucide="bot"></i> Task Automation
+          </button>
+        </div>
+
+        <div class="demo-content">
+          <div class="demo-output" id="demoOutput">
+            <div class="output-row">
+              <span class="output-label">Pipeline Status:</span>
+              <span class="output-value text-emerald">Active & Running</span>
+            </div>
+            <div class="output-row">
+              <span class="output-label">Processed Events:</span>
+              <span class="output-value font-mono" id="simEventsCount">1,248,900</span>
+            </div>
+            <div class="output-row">
+              <span class="output-label">Optimization Efficiency:</span>
+              <span class="output-value text-blue font-mono" id="simEfficiency">99.4%</span>
+            </div>
+            <div class="output-console" id="demoConsole">
+              [SYSTEM] Pipeline scenario 'Analytics Pipeline' initialized.<br>
+              [DATA] Ingesting stream from 12 cluster nodes...<br>
+              [SUCCESS] Latency reduced by 42ms. Zero dropped packets.
+            </div>
+          </div>
+
+          <div class="demo-controls">
+            <button class="btn btn-primary" id="runSimBtn">
+              <i data-lucide="play"></i> Run Live Simulation
+            </button>
+            <button class="btn btn-secondary" id="resetSimBtn">
+              <i data-lucide="rotate-ccw"></i> Reset Benchmark
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics / Counter Section -->
+  <section class="section metrics-section" id="metrics">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number" data-target="99.99">0</div>
+          <div class="metric-symbol">%</div>
+          <div class="metric-label">Uptime SLA Guaranteed</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number" data-target="50">0</div>
+          <div class="metric-symbol">M+</div>
+          <div class="metric-label">Daily Automated Events</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number" data-target="150">0</div>
+          <div class="metric-symbol">+</div>
+          <div class="metric-label">Global Edge Locations</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number" data-target="4.9">0</div>
+          <div class="metric-symbol">/5</div>
+          <div class="metric-label">Customer Satisfaction Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Loved by Engineering Leaders</h2>
+        <p class="section-subtitle">See how teams accelerate productivity with Aura Engine.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card glass-panel">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Aura Engine transformed our deployment workflows. What used to take hours of manual monitoring now executes seamlessly in seconds."
+          </p>
+          <div class="testimonial-user">
+            <div class="user-avatar">SR</div>
+            <div>
+              <div class="user-name">Sarah Chen</div>
+              <div class="user-role">VP of Engineering at CloudScale</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-panel">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "The level of precision and real-time telemetry is outstanding. Our team gained complete visibility over operations on day one."
+          </p>
+          <div class="testimonial-user">
+            <div class="user-avatar">MK</div>
+            <div>
+              <div class="user-name">Marcus Vance</div>
+              <div class="user-role">Lead Architect at DataFlow</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-panel">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Extremely fast, intuitive, and reliable. The interactive automation triggers save our engineers over 20 hours every week."
+          </p>
+          <div class="testimonial-user">
+            <div class="user-avatar">EL</div>
+            <div>
+              <div class="user-name">Elena Rostova</div>
+              <div class="user-role">Head of Product at NexusTech</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <div class="brand-icon"><i data-lucide="zap"></i></div>
+          <span class="brand-text">Aura<span class="brand-highlight">Engine</span></span>
+        </a>
+        <p class="footer-desc">
+          Empowering modern organizations with intelligent automation and real-time operational clarity.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#demo">Playground</a>
+          <a href="#metrics">Performance</a>
+          <a href="#">Roadmap</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">System Status</a>
+          <a href="#">Security</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>&copy; 2026 Aura Engine Inc. All rights reserved. Created with Antigravity AI.</p>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
