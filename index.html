@@ -34,7 +34,32 @@
         <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
           <i data-lucide="moon" id="themeIcon"></i>
         </button>
-        <a href="#demo" class="btn btn-primary">Get Started</a>
+
+        <!-- Auth Logged Out State -->
+        <div id="authLoggedOut" class="auth-btn-group">
+          <button class="btn btn-secondary btn-sm" id="loginNavBtn">Log In</button>
+          <button class="btn btn-primary btn-sm" id="signupNavBtn">Sign Up</button>
+        </div>
+
+        <!-- Auth Logged In State -->
+        <div id="authLoggedIn" class="user-profile-menu hidden">
+          <button class="user-avatar-btn" id="userAvatarBtn" title="User Menu">
+            <div class="user-avatar-small" id="userAvatarText">U</div>
+            <span class="user-name-small" id="userNameText">User</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="profile-dropdown glass-panel hidden" id="profileDropdown">
+            <div class="dropdown-header">
+              <div class="dropdown-name" id="dropdownUserName">User Name</div>
+              <div class="dropdown-email" id="dropdownUserEmail">user@example.com</div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item text-rose" id="logoutBtn">
+              <i data-lucide="log-out"></i> Log Out
+            </button>
+          </div>
+        </div>
+
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
           <i data-lucide="menu"></i>
         </button>
@@ -369,6 +394,91 @@
       </div>
     </div>
   </footer>
+
+  <!-- Authentication Modal -->
+  <div class="auth-modal-overlay hidden" id="authModalOverlay">
+    <div class="auth-modal glass-panel">
+      <button class="auth-modal-close" id="authModalClose" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="auth-header">
+        <div class="brand-icon modal-brand-icon">
+          <i data-lucide="zap"></i>
+        </div>
+        <h3 class="auth-title" id="authModalTitle">Welcome to Aura Engine</h3>
+        <p class="auth-subtitle" id="authModalSubtitle">Sign in or create an account to get started</p>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabLoginBtn">Log In</button>
+        <button class="auth-tab" id="tabSignupBtn">Sign Up</button>
+      </div>
+
+      <div class="auth-alert hidden" id="authAlert"></div>
+
+      <!-- Log In Form -->
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <div class="input-wrapper">
+            <i data-lucide="mail"></i>
+            <input type="email" id="loginEmail" placeholder="name@company.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <div class="input-wrapper">
+            <i data-lucide="lock"></i>
+            <input type="password" id="loginPassword" placeholder="••••••••" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span>Log In</span>
+          <i data-lucide="arrow-right"></i>
+        </button>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signupForm" class="auth-form hidden">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <div class="input-wrapper">
+            <i data-lucide="user"></i>
+            <input type="text" id="signupName" placeholder="Alex Morgan" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email Address</label>
+          <div class="input-wrapper">
+            <i data-lucide="mail"></i>
+            <input type="email" id="signupEmail" placeholder="name@company.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <div class="input-wrapper">
+            <i data-lucide="lock"></i>
+            <input type="password" id="signupPassword" placeholder="At least 6 characters" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <div class="input-wrapper">
+            <i data-lucide="shield-check"></i>
+            <input type="password" id="signupConfirmPassword" placeholder="Repeat password" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span>Create Account</span>
+          <i data-lucide="user-plus"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
 
   <script src="script.js"></script>
 </body>
